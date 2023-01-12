@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import JsonResponse
 
 # Create your views here.
-
 def getRoutes(request):
     routes = [
         {
@@ -37,5 +36,4 @@ def getRoutes(request):
         },
     ]
     return JsonResponse(routes, safe=False)
-
 # 'safe=False' any object can be passed for serialization (otherwise only dict instances are allowed)
