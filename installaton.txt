@@ -1,0 +1,11 @@
+python -m venv venv
+pip install django
+django-admin startproject notes .
+django-admin startapp api (python manage.py startapp api)
+python manage.py runserver
+python manage.py migrate
+python manage.py makemigrations
+python manage.py createsuperuser
+
+pip install djangorestframework
+pip install django-cors-headers
