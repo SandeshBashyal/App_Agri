@@ -19,9 +19,9 @@ const NotesListPage = () => {
     return (
         <div>
             <div className='notes-list'>
-                {notes.map((note, index)=>{
-                    <h3 key ={index}>{note.body}</h3>
-                })}
+                {notes.map((note, index)=>(
+                    <h3 key ={index}>{note.body}</h3> //key as a props, that means arbitary input
+                ))}
             </div>
         </div>
   )
