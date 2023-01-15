@@ -1,2 +1,2 @@
-# Apps
-I want to add my apps in this website: apps.lichal.com
+# App_Agri
+This is the project that will be deployed in the website: apps.lichal.com
