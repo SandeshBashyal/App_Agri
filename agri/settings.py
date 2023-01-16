@@ -27,12 +27,15 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast = bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['app.lichal.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+
+    'account.apps.AccountConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
