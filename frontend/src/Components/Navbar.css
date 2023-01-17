@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*{
+    font-family:'Courier New', Courier, monospace;
+    /* font-family: 'Titillium Web', sans-serif; */
+}
+header{
+    display:flex;
+    background: #62c939;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: space-between;
+}
+#logotitle{
+    display:flex;
+    padding: 1px 0px;
+}
+img{
+    width: 60px;
+    height: 60px;
+    transition: transform 1.5s ease-in-out;
+}
+#logo{
+    border-style: solid;
+    border-width: 5px;
+    padding-left: 2px;
+    border-color: red blue green orange;
+}
+img:hover{
+    animation-name: rotate; 
+    animation-duration: 1.5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+h1{
+    padding-left:10px;    
+}
+header nav a{
+    position: relative;
+    padding: 0 20px;
+}
+header nav div a{
+    padding: 0px 20px;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    transition: 0.3s ease-in-out;
+}
+header nav div a:hover,
+header nav div a.active{
+    color: rgb(255, 30, 0);
+}
+
+header nav div a:hover::after,
+header nav div a.active::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background: rgb(235, 35, 9);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+ header nav button.nav-btn{
+    padding: 5px;
+    cursor:pointer;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1.8rem;
+    visibility: hidden;
+    opacity: 0;
+}
