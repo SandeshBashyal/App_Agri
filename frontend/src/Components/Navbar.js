@@ -2,7 +2,6 @@ import React, {useRef} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import Logo from './Images/Logo.png';
 import './Navbar.css';
-
 // ffc
 function Navbar(){
     const navRef = useRef();
@@ -25,7 +24,7 @@ function Navbar(){
         <a className='active' href='/#'>Home</a>
         <a href='/#'>About</a>
         <a href='/#'>Contact</a>
-        <a href='/#'>Join</a>
+        <a href='/Signup'>Join</a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <FaTimes />
         </button>
