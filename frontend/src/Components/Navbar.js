@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import Logo from './Images/Logo.png';
 import './Navbar.css';
+
 // ffc
 function Navbar(){
     const navRef = useRef();

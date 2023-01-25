@@ -2,8 +2,9 @@ import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import "./Signup.css";
 import 'react-phone-number-input/style.css';
+import PropTypes from 'prop-types';
 
-const Signup = () => {
+const Signup = (props) => {
   const [value,setValue]=useState();
   return (
     <>
@@ -47,5 +48,7 @@ const Signup = () => {
 
   );
 }
-
+Signup.propTypes = {
+  window: PropTypes.func,
+};
 export default Signup;
